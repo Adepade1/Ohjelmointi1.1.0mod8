@@ -44,3 +44,13 @@ for luku in range(2, luku):
         game_on = False
     else:
         print(f"{annettuluku} on alkuluku")
+
+#Tehtävä 4
+
+nimet = []
+laskuri = 0
+while laskuri < 5:
+    nimet.append(input("Anna kaupungin nimet yksi kerrallaan: "))
+    laskuri += 1
+for n in nimet:
+    print(f"{n}")
