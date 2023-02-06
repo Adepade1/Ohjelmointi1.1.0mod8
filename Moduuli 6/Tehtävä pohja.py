@@ -1,12 +1,24 @@
-#Tehtävä 2
-import random
-game_on = True
-tahko = int(input("Anna nopan sivujen määrä: "))
-def nopan_heitto(tahko):
-    return random.randint(1, tahko)
+import mysql.connector
 
-while game_on == True:
-    arvo = nopan_heitto(tahko)
-    if arvo == tahko:
-        print("lopetus")
-        game_on = False
+yhteys = mysql.connector.connect(
+    host = 'localhost',
+    port = 3306,
+    database = 'flight_game',
+    user = 'user1',
+    password = '1234',
+    autocommit = True
+    )
+
+def funktio()
+
+
+ICAO = input("Anna ICAO tunnus: ")
+while True:
+    ICAO = input("Anna ICAO tunnus: ")
+    if ICAO == "":
+        print("ohjelma lopetettiin")
+        break
+    else:
+        funktio()
+
+
